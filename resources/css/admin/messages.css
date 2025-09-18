@@ -1,0 +1,28 @@
+@import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css");
+
+body {
+      font-family: "Vazir", sans-serif;
+  }
+
+  .modal {
+      display: none;
+  }
+
+  .modal.active {
+      display: flex;
+  }
+
+  .sidebar {
+      transition: transform 0.3s ease;
+  }
+
+  .sidebar.hidden {
+      transform: translateX(100%);
+  }
+
+  @media (min-width: 768px) {
+      .sidebar.hidden {
+          transform: translateX(0);
+      }
+  }
+
